@@ -1,0 +1,48 @@
+{
+  "name": "lapsus",
+  "version": "1.0.0",
+  "description": "A rewrite of Lapsus bot.",
+  "main": "LAPSUS.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0",
+    "fs": "0.0.1-security",
+    "glob": "^7.1.3",
+    "glob-promise": "^3.4.0",
+    "i18next": "^15.0.7",
+    "mariasql": "^0.2.6",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "rethinkdb": "^2.3.3",
+    "rpg-dice": "^0.6.0",
+    "sequelize": "^4.43.0",
+    "sequelize-auto-import": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParalaxMeister/Lapsus.git"
+  },
+  "keywords": [
+    "bot",
+    "discord"
+  ],
+  "author": "Vilberan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParalaxMeister/Lapsus/issues"
+  },
+  "homepage": "https://github.com/ParalaxMeister/Lapsus#readme"
+}
