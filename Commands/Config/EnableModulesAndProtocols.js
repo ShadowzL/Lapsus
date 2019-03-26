@@ -9,6 +9,7 @@ module.exports = {
 
   run: async (DB, LAPSUS, message, args) => {
 
+    if(!message.member.hasPermission(`ADMINISTRATOR`)) return message.channel.send()
 
     if(!args[0]) return message.channel.send(`${emoji('EMerro')} Ops, ${message.author}! Você não especificou um módulo!`);
     let Guild = await DB.Server.findOne({where: {ID: message.guild.id}})
@@ -24,7 +25,7 @@ module.exports = {
           Guild.update({
             ChannelWhitelist: true
           })
-          msg.edit(`${emoji('EMsucesso')} Módulo ativo com sucesso!`);
+          msg.edit(`${emoji('EMon')} Módulo ativo com sucesso!`);
           break;
       }
     })

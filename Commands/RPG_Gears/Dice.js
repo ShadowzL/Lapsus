@@ -1,6 +1,7 @@
 const dice = require('rpg-dice');
 import {emoji, sleep} from '../../Modules/Gears.js';
 import {ReactionCollector} from 'discord.js';
+
 module.exports = {
   options: {
     name:'dice',
@@ -21,7 +22,7 @@ module.exports = {
        const filter = (reaction, user) => reaction.emoji.name === 'ℹ' && user.id === message.author.id;
        const collector = m.createReactionCollector(filter, { time: 20000 });
 
-       const fnc = setTimeout(() => {m.clearReactions()}, 20000)
+       const fnc = setTimeout(() => {m.clearReactions()}, 20000);
 
        collector.on('collect', r => {
          var vez = `vez`;
