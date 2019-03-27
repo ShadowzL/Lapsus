@@ -3,6 +3,7 @@ export default (sequelize, DataTypes) => {
     ID: {type: DataTypes.BIGINT, primaryKey: true},
     Welcome: {type: DataTypes.BOOLEAN, defaultValue: false},
     WelcomeMSG: {type: DataTypes.STRING, defaultValue: null},
+    WelcomeCHANNEL: {type: DataTypes.BIGINT, defaultValue: null},
     ChannelWhitelist: {type: DataTypes.BOOLEAN, defaultValue: null},
     CommandCHANNEL: {type: DataTypes.ARRAY(DataTypes.BIGINT), defaultValue: []},
     Gold: {type: DataTypes.DECIMAL, defaultValue: 0},
