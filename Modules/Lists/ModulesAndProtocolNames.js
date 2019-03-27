@@ -1,3 +1,3 @@
-const ModuleArray = ['whitelist'];
+const ModuleArray = ['whitelist', 'welcome'];
 
 export default ModuleArray;
